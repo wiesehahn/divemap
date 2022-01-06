@@ -3,7 +3,9 @@
   "features": [
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "equipment": "scuba"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -14,12 +16,118 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "equipment": "scuba"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           121.84594810009003,
           -0.35422099486774444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "equipment": "scuba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.53828835487366,
+          -8.676402943263492
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "equipment": "scuba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.06154173612595,
+          -8.353666908820163
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "equipment": "scuba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.87855046987535,
+          -8.494900373139588
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "equipment": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.5837643146515,
+          -0.5349212659933481
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "equipment": "scuba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.38772231340407,
+          11.180115517725502
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "equipment": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2026055753231,
+          11.998351376032309
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "equipment": "scuba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.73594522476198,
+          9.58384496152884
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "equipment": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.44777393341064,
+          2.329232206753241
         ]
       }
     }
