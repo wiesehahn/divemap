@@ -4,7 +4,8 @@
     {
       "type": "Feature",
       "properties": {
-        "equipment": "scuba"
+        "equipment": "scuba",
+        "island": "Central Sulawesi"
       },
       "geometry": {
         "type": "Point",
@@ -17,7 +18,8 @@
     {
       "type": "Feature",
       "properties": {
-        "equipment": "scuba"
+        "equipment": "scuba",
+        "island": "Pulau Togean"
       },
       "geometry": {
         "type": "Point",
@@ -30,7 +32,8 @@
     {
       "type": "Feature",
       "properties": {
-        "equipment": "scuba"
+        "equipment": "scuba",
+        "island": "Nusa Penida"
       },
       "geometry": {
         "type": "Point",
@@ -43,7 +46,8 @@
     {
       "type": "Feature",
       "properties": {
-        "equipment": "scuba"
+        "equipment": "scuba",
+        "island": "Palau Gili Meno"
       },
       "geometry": {
         "type": "Point",
@@ -56,7 +60,8 @@
     {
       "type": "Feature",
       "properties": {
-        "equipment": "scuba"
+        "equipment": "scuba",
+        "island": "Komodo"
       },
       "geometry": {
         "type": "Point",
@@ -69,7 +74,8 @@
     {
       "type": "Feature",
       "properties": {
-        "equipment": "snorkel"
+        "equipment": "snorkel",
+        "island": "Raja Ampat"
       },
       "geometry": {
         "type": "Point",
@@ -82,7 +88,8 @@
     {
       "type": "Feature",
       "properties": {
-        "equipment": "scuba"
+        "equipment": "scuba",
+        "island": "Palawan"
       },
       "geometry": {
         "type": "Point",
@@ -95,7 +102,8 @@
     {
       "type": "Feature",
       "properties": {
-        "equipment": "snorkel"
+        "equipment": "snorkel",
+        "island": "Calamian Islands"
       },
       "geometry": {
         "type": "Point",
@@ -108,7 +116,8 @@
     {
       "type": "Feature",
       "properties": {
-        "equipment": "scuba"
+        "equipment": "scuba",
+        "island": "Panglao"
       },
       "geometry": {
         "type": "Point",
@@ -121,7 +130,8 @@
     {
       "type": "Feature",
       "properties": {
-        "equipment": "snorkel"
+        "equipment": "snorkel",
+        "island": "Pulau Thulandang"
       },
       "geometry": {
         "type": "Point",
