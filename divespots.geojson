@@ -920,6 +920,74 @@
           11.946017700065742
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Calamian",
+        "spot": "Skeleton Wreck",
+        "date": "",
+        "remarks": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.19225895404817,
+          11.941273248538241
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "spot": "North Cliff",
+        "location": "Panglao",
+        "remarks": "snorkel",
+        "equipment": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.77434372901917,
+          9.618590214392002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Balicasag",
+        "spot": "Black Forest",
+        "date": "28.02.2019",
+        "remarks": "scuba",
+        "link": "https://guidetothephilippines.ph/articles/adventure-and-outdoors/balicasag-diving-guide",
+        "equipment": "school of jackfish, turtles, white frogfish, mantis shrimp"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.68783712387084,
+          9.514624197282055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Balicasag",
+        "spot": "Divers Heaven",
+        "date": "28.02.2019",
+        "link": "https://guidetothephilippines.ph/articles/adventure-and-outdoors/balicasag-diving-guide",
+        "equipment": "relaxed drift dive, school of jackfish, turtles ",
+        "remarks": "scuba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.68512272834778,
+          9.520734811187337
+        ]
+      }
     }
   ]
 }
