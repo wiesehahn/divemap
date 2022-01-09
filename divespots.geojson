@@ -682,6 +682,244 @@
           -8.773944729804796
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "El Nido",
+        "spot": "Nat Nat",
+        "date": "22.02.2019",
+        "link": "https://www.tabanka-divers.com/best-diving-sites-elnido/",
+        "equipment": "",
+        "remarks": "scuba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.37509179115295,
+          11.198304517052268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "El Nido",
+        "spot": "North Rock",
+        "date": "22.02.2019",
+        "link": "https://www.tabanka-divers.com/best-diving-sites-elnido/",
+        "remarks": "scuba",
+        "equipment": "dive between and below rocks"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.3071460723877,
+          11.162581928696225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "El Nido",
+        "spot": "Helicopter Island",
+        "date": "22.02.2019",
+        "link": "https://www.tabanka-divers.com/best-diving-sites-elnido/",
+        "equipment": "bad visibility under water but great scenery above",
+        "remarks": "scuba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.34323787689209,
+          11.200462045594229
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "El Nido",
+        "remarks": "snorkel",
+        "spot": "Matinloc Shrine"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.27517414093016,
+          11.202040714823218
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "El Nido",
+        "remarks": "snorkel",
+        "spot": "Tapiutan Island"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.27215933799744,
+          11.201882848287942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "El Nido",
+        "spot": "Helicopter Island",
+        "date": "",
+        "remarks": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.33957934379578,
+          11.196325891372371
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "El Nido",
+        "spot": "Paradise Beach",
+        "remarks": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.37642753124237,
+          11.198467647821227
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "spot": "Nacpan Beach",
+        "location": "El Nido",
+        "date": "",
+        "remarks": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.42280292510986,
+          11.315745311254542
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Calamian",
+        "spot": "Ocam Ocam Beach",
+        "remarks": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.86212730407715,
+          12.195492532894269
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Calamian",
+        "spot": "Marcilla Beach",
+        "remarks": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.33483982086182,
+          12.02202778126059
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Calamian",
+        "spot": "Kayangan Lake",
+        "date": "",
+        "remarks": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.22645711898802,
+          11.956708156153637
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "El Nido",
+        "spot": "Secret Beach",
+        "date": "",
+        "remarks": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.28065925836563,
+          11.176975693159644
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "El Nido",
+        "spot": "Hidden Beach",
+        "remarks": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.28341120481491,
+          11.189837377702224
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "El Nido",
+        "spot": "Cadlao",
+        "remarks": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.36047911643982,
+          11.221562878625504
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Calamian",
+        "spot": "Twin Lagoon",
+        "remarks": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.20855069160461,
+          11.946017700065742
+        ]
+      }
     }
   ]
 }
