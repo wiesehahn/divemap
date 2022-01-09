@@ -283,6 +283,119 @@
           -0.335461964867974
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Gili",
+        "spot": "Meno Slope",
+        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/gili-lombok/meno-slope",
+        "date": "24.03.2018",
+        "remarks": "scuba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.05086386203766,
+          -8.35094945817333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "spot": "Coral Fan Garden",
+        "location": "Gili",
+        "date": "25.03.2018",
+        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/gili-lombok/halik",
+        "remarks": "scuba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.03647246956824,
+          -8.337460114147166
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Gili",
+        "spot": "Secret Garden",
+        "date": "26.03.2018",
+        "link": "https://manta-dive-giliair.com/gili-islands-dive-sites/secret-garden-all-levels",
+        "remarks": "scuba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.08551263809204,
+          -8.346411485720237
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Gili",
+        "spot": "Shark Point",
+        "date": "27.03.2018",
+        "link": "https://manta-dive-giliair.com/gili-islands-dive-sites/shark-point-all-levels",
+        "remarks": "scuba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.02502346038818,
+          -8.345657805656248
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Gili",
+        "spot": "House Reef",
+        "remarks": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.06260120868681,
+          -8.343221604515602
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Gili",
+        "spot": "House Reef",
+        "remarks": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.06294453144073,
+          -8.344176979322773
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Gili",
+        "spot": "House Reef",
+        "remarks": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.06276750564577,
+          -8.345238504145922
+        ]
+      }
     }
   ]
 }
