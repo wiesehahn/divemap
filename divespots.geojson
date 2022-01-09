@@ -612,6 +612,76 @@
           -8.446648535590294
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Nusa Penida",
+        "spot": "Toyapakeh",
+        "date": "11.04.2018",
+        "link": "https://diveconcepts.com/bali/spot-toyapakeh.php",
+        "remarks": "scuba",
+        "equipment": "Napoleon wrasse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.48295974731444,
+          -8.682649858457648
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Nusa Penida",
+        "spot": "S.D. Point",
+        "link": "https://diveconcepts.com/bali/spot-sd.php",
+        "date": "11.04.2018",
+        "equipment": "watersnake, mantis-shrimp",
+        "remarks": "scuba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.49513697624207,
+          -8.670728660262974
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Nusa Penida",
+        "spot": "Crystal Bay",
+        "date": "",
+        "equipment": "",
+        "remarks": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.45697450637816,
+          -8.714158602610837
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Nusa Penida",
+        "spot": "Atuh Bay",
+        "date": "",
+        "equipment": "",
+        "remarks": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.62259286642073,
+          -8.773944729804796
+        ]
+      }
     }
   ]
 }
