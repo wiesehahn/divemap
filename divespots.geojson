@@ -1,0 +1,101 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Tanjung Karang",
+        "spot": "House Reef",
+        "date": "08.01.2012",
+        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/donggala/house-reef-sulteng"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.74004387855531,
+          -0.647380285956961
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Tanjung Karang",
+        "spot": "House Reef",
+        "date": "08.01.2012",
+        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/donggala/house-reef-sulteng"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.73995268344878,
+          -0.6481688050099728
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Tanjung Karang",
+        "spot": "House Reef",
+        "date": "09.01.2012",
+        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/donggala/house-reef-sulteng"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.73940014839174,
+          -0.6491665228194464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Tanjung Karang",
+        "spot": "House Reef",
+        "date": "09.01.2012",
+        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/donggala/house-reef-sulteng"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.73903000354765,
+          -0.6508883901887283
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Tanjung Karang",
+        "spot": "Anchor Point",
+        "date": "10.01.2012",
+        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/donggala/anchor-point"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.73400354385376,
+          -0.6420001152760043
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Tanjung Karang",
+        "spot": "Pasi Pome",
+        "date": "10.01.2012",
+        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/donggala/pasi-pome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.72224473953247,
+          -0.6539298180299485
+        ]
+      }
+    }
+  ]
+}
