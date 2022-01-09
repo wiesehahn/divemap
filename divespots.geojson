@@ -7,7 +7,8 @@
         "location": "Tanjung Karang",
         "spot": "House Reef",
         "date": "08.01.2012",
-        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/donggala/house-reef-sulteng"
+        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/donggala/house-reef-sulteng",
+        "equipment": "scuba"
       },
       "geometry": {
         "type": "Point",
@@ -23,7 +24,8 @@
         "location": "Tanjung Karang",
         "spot": "House Reef",
         "date": "08.01.2012",
-        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/donggala/house-reef-sulteng"
+        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/donggala/house-reef-sulteng",
+        "equipment": "scuba"
       },
       "geometry": {
         "type": "Point",
@@ -39,7 +41,8 @@
         "location": "Tanjung Karang",
         "spot": "House Reef",
         "date": "09.01.2012",
-        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/donggala/house-reef-sulteng"
+        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/donggala/house-reef-sulteng",
+        "equipment": "scuba"
       },
       "geometry": {
         "type": "Point",
@@ -55,7 +58,8 @@
         "location": "Tanjung Karang",
         "spot": "House Reef",
         "date": "09.01.2012",
-        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/donggala/house-reef-sulteng"
+        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/donggala/house-reef-sulteng",
+        "equipment": "scuba"
       },
       "geometry": {
         "type": "Point",
@@ -71,7 +75,8 @@
         "location": "Tanjung Karang",
         "spot": "Anchor Point",
         "date": "10.01.2012",
-        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/donggala/anchor-point"
+        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/donggala/anchor-point",
+        "equipment": "scuba"
       },
       "geometry": {
         "type": "Point",
@@ -87,13 +92,195 @@
         "location": "Tanjung Karang",
         "spot": "Pasi Pome",
         "date": "10.01.2012",
-        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/donggala/pasi-pome"
+        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/donggala/pasi-pome",
+        "equipment": "scuba"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           119.72224473953247,
           -0.6539298180299485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Kadidiri",
+        "spot": "Lost Reef",
+        "date": "28.01.2012",
+        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/togean/lost-reef",
+        "remarks": "Manta!",
+        "equipment": "scuba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.85754060745238,
+          -0.3333215985269646
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Kadidiri",
+        "spot": "Taipi Wall",
+        "date": "28.01.2012",
+        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/togean/taipi-wall",
+        "equipment": "scuba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.85261607170104,
+          -0.3330426535058329
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Kadidiri",
+        "spot": "Coral Garden",
+        "date": "27.01.2012",
+        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/togean/coral-garden-togian",
+        "equipment": "scuba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.85327053070067,
+          -0.3352849421056091
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Kadidiri",
+        "spot": "House Reef",
+        "remarks": "snorkel",
+        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/togean/house-reef-togean"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.84567987918854,
+          -0.3528530943110922
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Kadidiri",
+        "spot": "House Reef",
+        "remarks": "snorkel",
+        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/togean/house-reef-togean"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.84476792812346,
+          -0.35352899814073785
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Kadidiri",
+        "spot": "House Reef",
+        "remarks": "snorkel",
+        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/togean/house-reef-togean"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.84356629848482,
+          -0.35547088029791174
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Kadidiri",
+        "spot": "Mildred's Rock",
+        "remarks": "snorkel",
+        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/togean/mildreds-rock"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.84117913246153,
+          -0.3610175801146798
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Kadidiri",
+        "spot": "Palau Taipi",
+        "remarks": "snorkel",
+        "link": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.85037910938263,
+          -0.33385266691072263
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Kadidiri",
+        "spot": "Mini Canyon",
+        "remarks": "snorkel",
+        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/togean/mini-canyon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.85167729854584,
+          -0.3353922286286416
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Kadidiri",
+        "spot": "The Gap",
+        "date": "",
+        "remarks": "snorkel",
+        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/togean/the-gap"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.8307614326477,
+          -0.3415612017130105
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Kadidiri",
+        "spot": "Jellyfish Lake",
+        "remarks": "snorkel",
+        "link": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.90158784389496,
+          -0.335461964867974
         ]
       }
     }
