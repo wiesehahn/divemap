@@ -396,6 +396,222 @@
           -8.345238504145922
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Komodo",
+        "spot": "Siaba Besar",
+        "date": "04.04.2018",
+        "link": "https://www.diveplanit.com/dive-site/siaba-besar/",
+        "remarks": "scuba",
+        "equipment": "blue nudibranches, Mandarin fish, turtles"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.66204524040221,
+          -8.544854314805079
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Komodo",
+        "spot": "Batu Bulong",
+        "date": "04.04.2018",
+        "link": "https://www.diveplanit.com/dive-site/batu-bolong/",
+        "remarks": "scuba",
+        "equipment": "reef sharks, baracuda, nudibranches, lots of fish"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.61397737264632,
+          -8.536607801881583
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Komodo",
+        "spot": "Pengah Kecil",
+        "date": "05.04.2018",
+        "link": "https://diverprofile.com/pengah-kecil-dive-site-komodo-national-park",
+        "equipment": "Parrotfish",
+        "remarks": "scuba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.68049347400664,
+          -8.57703761439602
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Komodo",
+        "spot": "Kelor",
+        "date": "05.04.2018",
+        "link": "",
+        "remarks": "scuba",
+        "equipment": "Ghost pipe fish"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.81795132160185,
+          -8.545337057866833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Komodo",
+        "spot": "Wainilu",
+        "date": "05.04.2018",
+        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/komodo/wainiluh",
+        "equipment": "Night Dive, strawberry nudibranch, crocodile fish",
+        "remarks": "scuba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.70840990543364,
+          -8.628290795135113
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Komodo",
+        "spot": "Mawan",
+        "date": "06.04.2018",
+        "link": "https://diveconcepts.com/mawan-komodo",
+        "equipment": "Drift Dive, Manta ",
+        "remarks": "scuba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.63362723588943,
+          -8.55827805742625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Komodo",
+        "spot": "Batu Bulong",
+        "date": "06.04.2018",
+        "link": "https://www.diveplanit.com/dive-site/batu-bolong/",
+        "equipment": "Napoleon wrasse, fish as in an aquarium",
+        "remarks": "scuba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.6141530573368,
+          -8.536774908930287
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "spot": "Karang Makassar ",
+        "link": "https://diveconcepts.com/makassar-reef-komodo",
+        "date": "06.04.2018",
+        "equipment": "Manta",
+        "remarks": "scuba",
+        "location": "Komodo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.58940029144286,
+          -8.545246875143471
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Komodo",
+        "spot": "Komodo Bay",
+        "date": "06.04.2018",
+        "equipment": "Night Dive, giant nudibranch",
+        "remarks": "scuba",
+        "link": "https://lovediving2.com/2018/03/16/maps-dive-site-komodo-indonedia/#jp-carousel-1539"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.47932243347168,
+          -8.62481154808635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "link": "https://diveconcepts.com/cauldron-komodo",
+        "location": "Komodo",
+        "spot": "The Cauldron",
+        "date": "07.04.2018",
+        "remarks": "scuba",
+        "equipment": "Shotgun Dive, Rays, Mantas, swarm of fish"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.56103324890137,
+          -8.459807762842066
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "link": "https://www.diveplanit.com/dive-site/crystal-rock-komodo/",
+        "location": "Komodo",
+        "spot": "Crystal Rock",
+        "date": "07.04.2018",
+        "equipment": "white-tip reef sharks, grey reef shark, big travellies",
+        "remarks": "scuba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.56710577011108,
+          -8.439368318604028
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "spot": "Crystal Bay",
+        "link": "https://www.scubajunkiekomodo.com/the-north/",
+        "location": "Komodo",
+        "date": "07.04.2018",
+        "equipment": "relaxed dive, crocodile fish, lobsters",
+        "remarks": "scuba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.56667661666869,
+          -8.446648535590294
+        ]
+      }
     }
   ]
 }
