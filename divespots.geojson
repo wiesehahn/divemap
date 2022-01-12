@@ -8,7 +8,8 @@
         "spot": "House Reef",
         "date": "08.01.2012",
         "link": "https://www.indonesiadivedirectory.com/en/dive-areas/donggala/house-reef-sulteng",
-        "equipment": "scuba"
+        "equipment": "scuba",
+        "remarks": ""
       },
       "geometry": {
         "type": "Point",
@@ -25,7 +26,8 @@
         "spot": "House Reef",
         "date": "08.01.2012",
         "link": "https://www.indonesiadivedirectory.com/en/dive-areas/donggala/house-reef-sulteng",
-        "equipment": "scuba"
+        "equipment": "scuba",
+        "remarks": ""
       },
       "geometry": {
         "type": "Point",
@@ -42,7 +44,8 @@
         "spot": "House Reef",
         "date": "09.01.2012",
         "link": "https://www.indonesiadivedirectory.com/en/dive-areas/donggala/house-reef-sulteng",
-        "equipment": "scuba"
+        "equipment": "scuba",
+        "remarks": ""
       },
       "geometry": {
         "type": "Point",
@@ -59,7 +62,8 @@
         "spot": "House Reef",
         "date": "09.01.2012",
         "link": "https://www.indonesiadivedirectory.com/en/dive-areas/donggala/house-reef-sulteng",
-        "equipment": "scuba"
+        "equipment": "scuba",
+        "remarks": ""
       },
       "geometry": {
         "type": "Point",
@@ -76,7 +80,8 @@
         "spot": "Anchor Point",
         "date": "10.01.2012",
         "link": "https://www.indonesiadivedirectory.com/en/dive-areas/donggala/anchor-point",
-        "equipment": "scuba"
+        "equipment": "scuba",
+        "remarks": ""
       },
       "geometry": {
         "type": "Point",
@@ -93,7 +98,8 @@
         "spot": "Pasi Pome",
         "date": "10.01.2012",
         "link": "https://www.indonesiadivedirectory.com/en/dive-areas/donggala/pasi-pome",
-        "equipment": "scuba"
+        "equipment": "scuba",
+        "remarks": ""
       },
       "geometry": {
         "type": "Point",
@@ -110,8 +116,8 @@
         "spot": "Lost Reef",
         "date": "28.01.2012",
         "link": "https://www.indonesiadivedirectory.com/en/dive-areas/togean/lost-reef",
-        "remarks": "Manta!",
-        "equipment": "scuba"
+        "equipment": "scuba",
+        "remarks": "Manta!"
       },
       "geometry": {
         "type": "Point",
@@ -128,7 +134,8 @@
         "spot": "Taipi Wall",
         "date": "28.01.2012",
         "link": "https://www.indonesiadivedirectory.com/en/dive-areas/togean/taipi-wall",
-        "equipment": "scuba"
+        "equipment": "scuba",
+        "remarks": ""
       },
       "geometry": {
         "type": "Point",
@@ -145,7 +152,8 @@
         "spot": "Coral Garden",
         "date": "27.01.2012",
         "link": "https://www.indonesiadivedirectory.com/en/dive-areas/togean/coral-garden-togian",
-        "equipment": "scuba"
+        "equipment": "scuba",
+        "remarks": ""
       },
       "geometry": {
         "type": "Point",
@@ -160,8 +168,8 @@
       "properties": {
         "location": "Kadidiri",
         "spot": "House Reef",
-        "remarks": "snorkel",
-        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/togean/house-reef-togean"
+        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/togean/house-reef-togean",
+        "equipment": "snorkel"
       },
       "geometry": {
         "type": "Point",
@@ -176,8 +184,8 @@
       "properties": {
         "location": "Kadidiri",
         "spot": "House Reef",
-        "remarks": "snorkel",
-        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/togean/house-reef-togean"
+        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/togean/house-reef-togean",
+        "equipment": "snorkel"
       },
       "geometry": {
         "type": "Point",
@@ -192,8 +200,8 @@
       "properties": {
         "location": "Kadidiri",
         "spot": "House Reef",
-        "remarks": "snorkel",
-        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/togean/house-reef-togean"
+        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/togean/house-reef-togean",
+        "equipment": "snorkel"
       },
       "geometry": {
         "type": "Point",
@@ -208,8 +216,8 @@
       "properties": {
         "location": "Kadidiri",
         "spot": "Mildred's Rock",
-        "remarks": "snorkel",
-        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/togean/mildreds-rock"
+        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/togean/mildreds-rock",
+        "equipment": "snorkel"
       },
       "geometry": {
         "type": "Point",
@@ -224,8 +232,8 @@
       "properties": {
         "location": "Kadidiri",
         "spot": "Palau Taipi",
-        "remarks": "snorkel",
-        "link": ""
+        "link": "",
+        "equipment": "snorkel"
       },
       "geometry": {
         "type": "Point",
@@ -240,8 +248,8 @@
       "properties": {
         "location": "Kadidiri",
         "spot": "Mini Canyon",
-        "remarks": "snorkel",
-        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/togean/mini-canyon"
+        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/togean/mini-canyon",
+        "equipment": "snorkel"
       },
       "geometry": {
         "type": "Point",
@@ -257,8 +265,8 @@
         "location": "Kadidiri",
         "spot": "The Gap",
         "date": "",
-        "remarks": "snorkel",
-        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/togean/the-gap"
+        "link": "https://www.indonesiadivedirectory.com/en/dive-areas/togean/the-gap",
+        "equipment": "snorkel"
       },
       "geometry": {
         "type": "Point",
@@ -273,8 +281,8 @@
       "properties": {
         "location": "Kadidiri",
         "spot": "Jellyfish Lake",
-        "remarks": "snorkel",
-        "link": ""
+        "link": "",
+        "equipment": "snorkel"
       },
       "geometry": {
         "type": "Point",
@@ -291,7 +299,7 @@
         "spot": "Meno Slope",
         "link": "https://www.indonesiadivedirectory.com/en/dive-areas/gili-lombok/meno-slope",
         "date": "24.03.2018",
-        "remarks": "scuba"
+        "equipment": "scuba"
       },
       "geometry": {
         "type": "Point",
@@ -308,7 +316,7 @@
         "location": "Gili",
         "date": "25.03.2018",
         "link": "https://www.indonesiadivedirectory.com/en/dive-areas/gili-lombok/halik",
-        "remarks": "scuba"
+        "equipment": "scuba"
       },
       "geometry": {
         "type": "Point",
@@ -325,7 +333,7 @@
         "spot": "Secret Garden",
         "date": "26.03.2018",
         "link": "https://manta-dive-giliair.com/gili-islands-dive-sites/secret-garden-all-levels",
-        "remarks": "scuba"
+        "equipment": "scuba"
       },
       "geometry": {
         "type": "Point",
@@ -342,7 +350,7 @@
         "spot": "Shark Point",
         "date": "27.03.2018",
         "link": "https://manta-dive-giliair.com/gili-islands-dive-sites/shark-point-all-levels",
-        "remarks": "scuba"
+        "equipment": "scuba"
       },
       "geometry": {
         "type": "Point",
@@ -357,7 +365,7 @@
       "properties": {
         "location": "Gili",
         "spot": "House Reef",
-        "remarks": "snorkel"
+        "equipment": "snorkel"
       },
       "geometry": {
         "type": "Point",
@@ -372,7 +380,7 @@
       "properties": {
         "location": "Gili",
         "spot": "House Reef",
-        "remarks": "snorkel"
+        "equipment": "snorkel"
       },
       "geometry": {
         "type": "Point",
@@ -387,7 +395,7 @@
       "properties": {
         "location": "Gili",
         "spot": "House Reef",
-        "remarks": "snorkel"
+        "equipment": "snorkel"
       },
       "geometry": {
         "type": "Point",
@@ -404,8 +412,8 @@
         "spot": "Siaba Besar",
         "date": "04.04.2018",
         "link": "https://www.diveplanit.com/dive-site/siaba-besar/",
-        "remarks": "scuba",
-        "equipment": "blue nudibranches, Mandarin fish, turtles"
+        "equipment": "scuba",
+        "remarks": "blue nudibranches, Mandarin fish, turtles"
       },
       "geometry": {
         "type": "Point",
@@ -422,8 +430,8 @@
         "spot": "Batu Bulong",
         "date": "04.04.2018",
         "link": "https://www.diveplanit.com/dive-site/batu-bolong/",
-        "remarks": "scuba",
-        "equipment": "reef sharks, baracuda, nudibranches, lots of fish"
+        "equipment": "scuba",
+        "remarks": "reef sharks, baracuda, nudibranches, lots of fish"
       },
       "geometry": {
         "type": "Point",
@@ -440,8 +448,8 @@
         "spot": "Pengah Kecil",
         "date": "05.04.2018",
         "link": "https://diverprofile.com/pengah-kecil-dive-site-komodo-national-park",
-        "equipment": "Parrotfish",
-        "remarks": "scuba"
+        "equipment": "scuba",
+        "remarks": "Parrotfish"
       },
       "geometry": {
         "type": "Point",
@@ -458,8 +466,8 @@
         "spot": "Kelor",
         "date": "05.04.2018",
         "link": "",
-        "remarks": "scuba",
-        "equipment": "Ghost pipe fish"
+        "equipment": "scuba",
+        "remarks": "Ghost pipe fish"
       },
       "geometry": {
         "type": "Point",
@@ -476,8 +484,8 @@
         "spot": "Wainilu",
         "date": "05.04.2018",
         "link": "https://www.indonesiadivedirectory.com/en/dive-areas/komodo/wainiluh",
-        "equipment": "Night Dive, strawberry nudibranch, crocodile fish",
-        "remarks": "scuba"
+        "equipment": "scuba",
+        "remarks": "Night Dive, strawberry nudibranch, crocodile fish"
       },
       "geometry": {
         "type": "Point",
@@ -494,8 +502,8 @@
         "spot": "Mawan",
         "date": "06.04.2018",
         "link": "https://diveconcepts.com/mawan-komodo",
-        "equipment": "Drift Dive, Manta ",
-        "remarks": "scuba"
+        "equipment": "scuba",
+        "remarks": "Drift Dive, Manta "
       },
       "geometry": {
         "type": "Point",
@@ -512,8 +520,8 @@
         "spot": "Batu Bulong",
         "date": "06.04.2018",
         "link": "https://www.diveplanit.com/dive-site/batu-bolong/",
-        "equipment": "Napoleon wrasse, fish as in an aquarium",
-        "remarks": "scuba"
+        "equipment": "scuba",
+        "remarks": "Napoleon wrasse, fish as in an aquarium"
       },
       "geometry": {
         "type": "Point",
@@ -529,9 +537,9 @@
         "spot": "Karang Makassar ",
         "link": "https://diveconcepts.com/makassar-reef-komodo",
         "date": "06.04.2018",
-        "equipment": "Manta",
-        "remarks": "scuba",
-        "location": "Komodo"
+        "location": "Komodo",
+        "equipment": "scuba",
+        "remarks": "Manta"
       },
       "geometry": {
         "type": "Point",
@@ -547,9 +555,9 @@
         "location": "Komodo",
         "spot": "Komodo Bay",
         "date": "06.04.2018",
-        "equipment": "Night Dive, giant nudibranch",
-        "remarks": "scuba",
-        "link": "https://lovediving2.com/2018/03/16/maps-dive-site-komodo-indonedia/#jp-carousel-1539"
+        "link": "https://lovediving2.com/2018/03/16/maps-dive-site-komodo-indonedia/#jp-carousel-1539",
+        "equipment": "scuba",
+        "remarks": "Night Dive, giant nudibranch"
       },
       "geometry": {
         "type": "Point",
@@ -566,8 +574,8 @@
         "location": "Komodo",
         "spot": "The Cauldron",
         "date": "07.04.2018",
-        "remarks": "scuba",
-        "equipment": "Shotgun Dive, Rays, Mantas, swarm of fish"
+        "equipment": "scuba",
+        "remarks": "Shotgun Dive, Rays, Mantas, swarm of fish"
       },
       "geometry": {
         "type": "Point",
@@ -584,8 +592,8 @@
         "location": "Komodo",
         "spot": "Crystal Rock",
         "date": "07.04.2018",
-        "equipment": "white-tip reef sharks, grey reef shark, big travellies",
-        "remarks": "scuba"
+        "equipment": "scuba",
+        "remarks": "white-tip reef sharks, grey reef shark, big travellies"
       },
       "geometry": {
         "type": "Point",
@@ -602,8 +610,8 @@
         "link": "https://www.scubajunkiekomodo.com/the-north/",
         "location": "Komodo",
         "date": "07.04.2018",
-        "equipment": "relaxed dive, crocodile fish, lobsters",
-        "remarks": "scuba"
+        "equipment": "scuba",
+        "remarks": "relaxed dive, crocodile fish, lobsters"
       },
       "geometry": {
         "type": "Point",
@@ -620,8 +628,8 @@
         "spot": "Toyapakeh",
         "date": "11.04.2018",
         "link": "https://diveconcepts.com/bali/spot-toyapakeh.php",
-        "remarks": "scuba",
-        "equipment": "Napoleon wrasse"
+        "equipment": "scuba",
+        "remarks": "Napoleon wrasse"
       },
       "geometry": {
         "type": "Point",
@@ -638,8 +646,8 @@
         "spot": "S.D. Point",
         "link": "https://diveconcepts.com/bali/spot-sd.php",
         "date": "11.04.2018",
-        "equipment": "watersnake, mantis-shrimp",
-        "remarks": "scuba"
+        "equipment": "scuba",
+        "remarks": "watersnake, mantis-shrimp"
       },
       "geometry": {
         "type": "Point",
@@ -655,8 +663,8 @@
         "location": "Nusa Penida",
         "spot": "Crystal Bay",
         "date": "",
-        "equipment": "",
-        "remarks": "snorkel"
+        "equipment": "snorkel",
+        "remarks": ""
       },
       "geometry": {
         "type": "Point",
@@ -672,8 +680,8 @@
         "location": "Nusa Penida",
         "spot": "Atuh Bay",
         "date": "",
-        "equipment": "",
-        "remarks": "snorkel"
+        "equipment": "snorkel",
+        "remarks": ""
       },
       "geometry": {
         "type": "Point",
@@ -690,8 +698,8 @@
         "spot": "Nat Nat",
         "date": "22.02.2019",
         "link": "https://www.tabanka-divers.com/best-diving-sites-elnido/",
-        "equipment": "",
-        "remarks": "scuba"
+        "equipment": "scuba",
+        "remarks": ""
       },
       "geometry": {
         "type": "Point",
@@ -708,8 +716,8 @@
         "spot": "North Rock",
         "date": "22.02.2019",
         "link": "https://www.tabanka-divers.com/best-diving-sites-elnido/",
-        "remarks": "scuba",
-        "equipment": "dive between and below rocks"
+        "equipment": "scuba",
+        "remarks": "dive between and below rocks"
       },
       "geometry": {
         "type": "Point",
@@ -726,8 +734,8 @@
         "spot": "Helicopter Island",
         "date": "22.02.2019",
         "link": "https://www.tabanka-divers.com/best-diving-sites-elnido/",
-        "equipment": "bad visibility under water but great scenery above",
-        "remarks": "scuba"
+        "equipment": "scuba",
+        "remarks": "bad visibility under water but great scenery above"
       },
       "geometry": {
         "type": "Point",
@@ -741,8 +749,8 @@
       "type": "Feature",
       "properties": {
         "location": "El Nido",
-        "remarks": "snorkel",
-        "spot": "Matinloc Shrine"
+        "spot": "Matinloc Shrine",
+        "equipment": "snorkel"
       },
       "geometry": {
         "type": "Point",
@@ -756,8 +764,8 @@
       "type": "Feature",
       "properties": {
         "location": "El Nido",
-        "remarks": "snorkel",
-        "spot": "Tapiutan Island"
+        "spot": "Tapiutan Island",
+        "equipment": "snorkel"
       },
       "geometry": {
         "type": "Point",
@@ -773,7 +781,7 @@
         "location": "El Nido",
         "spot": "Helicopter Island",
         "date": "",
-        "remarks": "snorkel"
+        "equipment": "snorkel"
       },
       "geometry": {
         "type": "Point",
@@ -788,7 +796,7 @@
       "properties": {
         "location": "El Nido",
         "spot": "Paradise Beach",
-        "remarks": "snorkel"
+        "equipment": "snorkel"
       },
       "geometry": {
         "type": "Point",
@@ -804,7 +812,7 @@
         "spot": "Nacpan Beach",
         "location": "El Nido",
         "date": "",
-        "remarks": "snorkel"
+        "equipment": "snorkel"
       },
       "geometry": {
         "type": "Point",
@@ -819,7 +827,7 @@
       "properties": {
         "location": "Calamian",
         "spot": "Ocam Ocam Beach",
-        "remarks": "snorkel"
+        "equipment": "snorkel"
       },
       "geometry": {
         "type": "Point",
@@ -834,7 +842,7 @@
       "properties": {
         "location": "Calamian",
         "spot": "Marcilla Beach",
-        "remarks": "snorkel"
+        "equipment": "snorkel"
       },
       "geometry": {
         "type": "Point",
@@ -850,7 +858,7 @@
         "location": "Calamian",
         "spot": "Kayangan Lake",
         "date": "",
-        "remarks": "snorkel"
+        "equipment": "snorkel"
       },
       "geometry": {
         "type": "Point",
@@ -866,7 +874,7 @@
         "location": "El Nido",
         "spot": "Secret Beach",
         "date": "",
-        "remarks": "snorkel"
+        "equipment": "snorkel"
       },
       "geometry": {
         "type": "Point",
@@ -881,7 +889,7 @@
       "properties": {
         "location": "El Nido",
         "spot": "Hidden Beach",
-        "remarks": "snorkel"
+        "equipment": "snorkel"
       },
       "geometry": {
         "type": "Point",
@@ -896,7 +904,7 @@
       "properties": {
         "location": "El Nido",
         "spot": "Cadlao",
-        "remarks": "snorkel"
+        "equipment": "snorkel"
       },
       "geometry": {
         "type": "Point",
@@ -911,7 +919,7 @@
       "properties": {
         "location": "Calamian",
         "spot": "Twin Lagoon",
-        "remarks": "snorkel"
+        "equipment": "snorkel"
       },
       "geometry": {
         "type": "Point",
@@ -927,7 +935,7 @@
         "location": "Calamian",
         "spot": "Skeleton Wreck",
         "date": "",
-        "remarks": "snorkel"
+        "equipment": "snorkel"
       },
       "geometry": {
         "type": "Point",
@@ -942,8 +950,8 @@
       "properties": {
         "spot": "North Cliff",
         "location": "Panglao",
-        "remarks": "snorkel",
-        "equipment": ""
+        "equipment": "snorkel",
+        "remarks": ""
       },
       "geometry": {
         "type": "Point",
@@ -959,9 +967,9 @@
         "location": "Balicasag",
         "spot": "Black Forest",
         "date": "28.02.2019",
-        "remarks": "scuba",
         "link": "https://guidetothephilippines.ph/articles/adventure-and-outdoors/balicasag-diving-guide",
-        "equipment": "school of jackfish, turtles, white frogfish, mantis shrimp"
+        "equipment": "scuba",
+        "remarks": "school of jackfish, turtles, white frogfish, mantis shrimp"
       },
       "geometry": {
         "type": "Point",
@@ -978,8 +986,8 @@
         "spot": "Divers Heaven",
         "date": "28.02.2019",
         "link": "https://guidetothephilippines.ph/articles/adventure-and-outdoors/balicasag-diving-guide",
-        "equipment": "relaxed drift dive, school of jackfish, turtles ",
-        "remarks": "scuba"
+        "equipment": "scuba",
+        "remarks": "relaxed drift dive, school of jackfish, turtles "
       },
       "geometry": {
         "type": "Point",
