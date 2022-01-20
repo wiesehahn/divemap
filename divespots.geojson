@@ -996,6 +996,256 @@
           9.520734811187337
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Raja Ampat",
+        "spot": "House Reef",
+        "equipment": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.57792782783505,
+          -0.5356722517411097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "spot": "House Reef",
+        "equipment": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.5808460712433,
+          -0.5361764849772483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "spot": "House Reef",
+        "equipment": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.584397315979,
+          -0.5359190041809918
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "equipment": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.5918538570404,
+          -0.5306835589837916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "remarks": "Mandarin fish",
+        "equipment": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.5992406606674,
+          -0.4863537555090116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "remarks": "mangroves",
+        "equipment": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.66673040390015,
+          -0.48740514348129843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "spot": "South Mansuar",
+        "equipment": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.57113647460938,
+          -0.6120899119605745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "spot": "Cape Mansuar",
+        "equipment": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.65839409828186,
+          -0.5700994832078308
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "spot": "Manta Point",
+        "equipment": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.56663036346436,
+          -0.5792185351653866
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "spot": "Waterhouse",
+        "equipment": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.57645797729492,
+          -0.5594784515617702
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "spot": "Hidden Bay",
+        "location": "",
+        "equipment": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.49697875976562,
+          -0.44773122961374096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "spot": "Rufas Hidden Bay",
+        "equipment": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.28449416160583,
+          -0.5641989124663935
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "spot": "Fam island",
+        "equipment": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.26800394058225,
+          -0.6816941594654695
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "spot": "",
+        "equipment": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.36175251007077,
+          -0.48525945356798905
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "spot": "The Passage",
+        "equipment": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.56018233299255,
+          -0.42877393095854005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "equipment": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.57534486055374,
+          -0.42396486335437944
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "equipment": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.45672416687012,
+          -0.5211996674960151
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "equipment": "snorkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.55020451545715,
+          -0.514054554281695
+        ]
+      }
     }
   ]
 }
