@@ -1,0 +1,1035 @@
+{
+    "version": 8,
+    "name": "dive",
+    "metadata": {
+        "mapbox:type": "default",
+        "mapbox:origin": "basic-v1",
+        "mapbox:sdk-support": {
+            "android": "10.0.0",
+            "ios": "10.0.0",
+            "js": "2.6.0"
+        },
+        "mapbox:autocomposite": true,
+        "mapbox:groups": {
+            "be013db6d2beabd21f0a1beb36765eca": {
+                "name": "coastal highlights",
+                "collapsed": true
+            },
+            "d9ee12f5f10671c96b2290d46a8222b4": {
+                "name": "hillshade",
+                "collapsed": false
+            },
+            "070a0a14a66ca232fd7eb822e4434ba9": {
+                "name": "divecenters",
+                "collapsed": true
+            },
+            "6aaf5ed60b6b78789b1b2cccd228db4a": {
+                "name": "labels",
+                "collapsed": true
+            },
+            "581bf8ec7a9feccb4ce1b2d0119c7714": {
+                "name": "locations",
+                "collapsed": false
+            }
+        },
+        "mapbox:uiParadigm": "layers"
+    },
+    "center": [123.83697133205874, 1.3468258144037293],
+    "zoom": 4.383254165076805,
+    "bearing": 0,
+    "pitch": 0,
+    "light": {"color": "hsl(0, 0%, 100%)"},
+    "sources": {
+        "mapbox://mapbox.satellite": {
+            "url": "mapbox://mapbox.satellite",
+            "type": "raster",
+            "tileSize": 256
+        },
+        "mapbox://mapbox.mapbox-terrain-dem-v1": {
+            "url": "mapbox://mapbox.mapbox-terrain-dem-v1",
+            "type": "raster-dem",
+            "tileSize": 512
+        },
+        "composite": {
+            "url": "mapbox://mapbox.mapbox-streets-v8,mapbox-public.bathymetry,wiesehahn.484d0b3i,mapbox.country-boundaries-v1",
+            "type": "vector"
+        }
+    },
+    "sprite": "mapbox://sprites/wiesehahn/ckyhc6j18ht2o15pc7zdt0pzv/ck2u8j60r58fu0sgyxrigm3cu",
+    "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
+    "layers": [
+        {
+            "id": "water-depth",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "water-depth",
+            "paint": {
+                "fill-color": [
+                    "interpolate",
+                    ["linear"],
+                    ["get", "depth"],
+                    0,
+                    "hsl(229, 91%, 56%)",
+                    1667,
+                    "hsl(234, 94%, 48%)",
+                    7000,
+                    "hsl(232, 71%, 22%)",
+                    10000,
+                    "hsl(232, 93%, 12%)"
+                ],
+                "fill-outline-color": "hsla(253, 88%, 92%, 0)",
+                "fill-antialias": false
+            }
+        },
+        {
+            "id": "satellite-saturated copy",
+            "type": "raster",
+            "source": "mapbox://mapbox.satellite",
+            "paint": {
+                "raster-saturation": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    4,
+                    0.77,
+                    14,
+                    0.33
+                ],
+                "raster-opacity": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    0,
+                    0.49,
+                    11,
+                    1
+                ],
+                "raster-hue-rotate": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    4,
+                    45,
+                    22,
+                    2
+                ],
+                "raster-contrast": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    0,
+                    -0.2,
+                    14,
+                    0.33
+                ]
+            }
+        },
+        {
+            "id": "country-boundaries copy 1",
+            "type": "line",
+            "metadata": {"mapbox:group": "be013db6d2beabd21f0a1beb36765eca"},
+            "source": "composite",
+            "source-layer": "country_boundaries",
+            "layout": {"line-cap": "round", "line-join": "round"},
+            "paint": {
+                "line-color": "hsl(206, 98%, 60%)",
+                "line-opacity": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    4,
+                    0.1,
+                    8,
+                    0
+                ],
+                "line-blur": 10,
+                "line-offset": -3,
+                "line-width": 10
+            }
+        },
+        {
+            "id": "country-boundaries copy 3",
+            "type": "line",
+            "metadata": {"mapbox:group": "be013db6d2beabd21f0a1beb36765eca"},
+            "source": "composite",
+            "source-layer": "country_boundaries",
+            "layout": {
+                "line-join": "round",
+                "line-cap": "round",
+                "line-round-limit": 10
+            },
+            "paint": {
+                "line-color": "hsl(175, 83%, 58%)",
+                "line-opacity": [
+                    "interpolate",
+                    ["exponential", 0.36],
+                    ["zoom"],
+                    4,
+                    0.15,
+                    7,
+                    0
+                ],
+                "line-width": 3,
+                "line-offset": -2,
+                "line-blur": 4
+            }
+        },
+        {
+            "id": "country-boundaries copy 2",
+            "type": "line",
+            "metadata": {"mapbox:group": "be013db6d2beabd21f0a1beb36765eca"},
+            "source": "composite",
+            "source-layer": "country_boundaries",
+            "layout": {"line-join": "round"},
+            "paint": {
+                "line-color": "hsl(154, 88%, 100%)",
+                "line-opacity": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    4,
+                    0.17,
+                    8,
+                    0
+                ],
+                "line-width": 2,
+                "line-blur": 3,
+                "line-offset": -1
+            }
+        },
+        {
+            "id": "mapbox-mapbox-terrain-dem-v1 (1) copy 3",
+            "type": "hillshade",
+            "metadata": {"mapbox:group": "d9ee12f5f10671c96b2290d46a8222b4"},
+            "source": "mapbox://mapbox.mapbox-terrain-dem-v1",
+            "paint": {
+                "hillshade-illumination-anchor": "map",
+                "hillshade-exaggeration": 0.2,
+                "hillshade-illumination-direction": 10,
+                "hillshade-shadow-color": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    0,
+                    "hsl(235, 97%, 30%)",
+                    12,
+                    "hsla(235, 97%, 30%, 0.02)"
+                ],
+                "hillshade-highlight-color": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    0,
+                    "hsl(167, 75%, 81%)",
+                    12,
+                    "hsla(167, 75%, 81%, 0)"
+                ],
+                "hillshade-accent-color": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    0,
+                    "hsla(319, 89%, 81%, 0.98)",
+                    12,
+                    "hsla(319, 89%, 81%, 0)"
+                ]
+            }
+        },
+        {
+            "id": "mapbox-mapbox-terrain-dem-v1 (1) copy 1",
+            "type": "hillshade",
+            "metadata": {"mapbox:group": "d9ee12f5f10671c96b2290d46a8222b4"},
+            "source": "mapbox://mapbox.mapbox-terrain-dem-v1",
+            "paint": {
+                "hillshade-illumination-anchor": "map",
+                "hillshade-illumination-direction": 355,
+                "hillshade-exaggeration": 0.3,
+                "hillshade-shadow-color": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    0,
+                    "hsl(235, 97%, 30%)",
+                    12,
+                    "hsla(235, 97%, 30%, 0.02)"
+                ],
+                "hillshade-highlight-color": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    0,
+                    "hsl(167, 75%, 81%)",
+                    12,
+                    "hsla(167, 75%, 81%, 0)"
+                ],
+                "hillshade-accent-color": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    0,
+                    "hsla(319, 89%, 81%, 0.98)",
+                    12,
+                    "hsla(319, 89%, 81%, 0)"
+                ]
+            }
+        },
+        {
+            "id": "mapbox-mapbox-terrain-dem-v1 (1)",
+            "type": "hillshade",
+            "metadata": {"mapbox:group": "d9ee12f5f10671c96b2290d46a8222b4"},
+            "source": "mapbox://mapbox.mapbox-terrain-dem-v1",
+            "paint": {
+                "hillshade-illumination-anchor": "map",
+                "hillshade-exaggeration": 0.4,
+                "hillshade-shadow-color": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    0,
+                    "hsl(235, 97%, 30%)",
+                    12,
+                    "hsla(235, 97%, 30%, 0.02)"
+                ],
+                "hillshade-highlight-color": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    0,
+                    "hsl(167, 75%, 81%)",
+                    12,
+                    "hsla(167, 75%, 81%, 0)"
+                ],
+                "hillshade-accent-color": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    0,
+                    "hsla(319, 89%, 81%, 0.98)",
+                    12,
+                    "hsla(319, 89%, 81%, 0)"
+                ]
+            }
+        },
+        {
+            "id": "mapbox-mapbox-terrain-dem-v1 (1) copy",
+            "type": "hillshade",
+            "metadata": {"mapbox:group": "d9ee12f5f10671c96b2290d46a8222b4"},
+            "source": "mapbox://mapbox.mapbox-terrain-dem-v1",
+            "paint": {
+                "hillshade-illumination-anchor": "map",
+                "hillshade-illumination-direction": 315,
+                "hillshade-exaggeration": 0.3,
+                "hillshade-shadow-color": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    0,
+                    "hsl(235, 97%, 30%)",
+                    12,
+                    "hsla(235, 97%, 30%, 0.02)"
+                ],
+                "hillshade-highlight-color": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    0,
+                    "hsl(167, 75%, 81%)",
+                    12,
+                    "hsla(167, 75%, 81%, 0)"
+                ],
+                "hillshade-accent-color": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    0,
+                    "hsla(319, 89%, 81%, 0.98)",
+                    12,
+                    "hsla(319, 89%, 81%, 0)"
+                ]
+            }
+        },
+        {
+            "id": "mapbox-mapbox-terrain-dem-v1 (1) copy 2",
+            "type": "hillshade",
+            "metadata": {"mapbox:group": "d9ee12f5f10671c96b2290d46a8222b4"},
+            "source": "mapbox://mapbox.mapbox-terrain-dem-v1",
+            "paint": {
+                "hillshade-illumination-anchor": "map",
+                "hillshade-exaggeration": 0.2,
+                "hillshade-illumination-direction": 300,
+                "hillshade-shadow-color": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    0,
+                    "hsl(235, 97%, 30%)",
+                    12,
+                    "hsla(235, 97%, 30%, 0.02)"
+                ],
+                "hillshade-highlight-color": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    0,
+                    "hsl(167, 75%, 81%)",
+                    12,
+                    "hsla(167, 75%, 81%, 0)"
+                ],
+                "hillshade-accent-color": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    0,
+                    "hsla(319, 89%, 81%, 0.98)",
+                    12,
+                    "hsla(319, 89%, 81%, 0)"
+                ]
+            }
+        },
+        {
+            "id": "divecenters-8z4elo copy 3",
+            "type": "circle",
+            "metadata": {"mapbox:group": "070a0a14a66ca232fd7eb822e4434ba9"},
+            "source": "composite",
+            "source-layer": "divecenters-8z4elo",
+            "paint": {
+                "circle-color": "hsla(0, 0%, 0%, 0)",
+                "circle-radius": [
+                    "interpolate",
+                    ["exponential", 1.96],
+                    ["zoom"],
+                    0,
+                    7,
+                    14,
+                    1000
+                ],
+                "circle-stroke-color": "hsla(183, 96%, 2%, 0.54)",
+                "circle-stroke-width": 1,
+                "circle-pitch-alignment": "map",
+                "circle-blur": 0.5,
+                "circle-stroke-opacity": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    6,
+                    1,
+                    10,
+                    0
+                ],
+                "circle-translate": [3, 3]
+            }
+        },
+        {
+            "id": "divecenters-8z4elo copy 2",
+            "type": "circle",
+            "metadata": {"mapbox:group": "070a0a14a66ca232fd7eb822e4434ba9"},
+            "source": "composite",
+            "source-layer": "divecenters-8z4elo",
+            "paint": {
+                "circle-color": "hsla(0, 0%, 0%, 0)",
+                "circle-radius": [
+                    "interpolate",
+                    ["exponential", 1.96],
+                    ["zoom"],
+                    0,
+                    7,
+                    14,
+                    1000
+                ],
+                "circle-stroke-color": "hsla(183, 90%, 97%, 0.59)",
+                "circle-stroke-width": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    6,
+                    2,
+                    11,
+                    5
+                ],
+                "circle-pitch-alignment": "map",
+                "circle-stroke-opacity": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    6,
+                    1,
+                    10,
+                    0
+                ],
+                "circle-blur": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    6,
+                    0,
+                    10,
+                    0.75
+                ]
+            }
+        },
+        {
+            "id": "natural-point-label shadow",
+            "type": "symbol",
+            "metadata": {"mapbox:group": "6aaf5ed60b6b78789b1b2cccd228db4a"},
+            "source": "composite",
+            "source-layer": "natural_label",
+            "minzoom": 4,
+            "filter": [
+                "all",
+                [
+                    "match",
+                    ["get", "class"],
+                    ["dock", "glacier", "landform", "water_feature", "wetland"],
+                    ["match", ["get", "worldview"], ["all", "US"], true, false],
+                    [
+                        "disputed_dock",
+                        "disputed_glacier",
+                        "disputed_landform",
+                        "disputed_water_feature",
+                        "disputed_wetland"
+                    ],
+                    [
+                        "all",
+                        ["==", ["get", "disputed"], "true"],
+                        [
+                            "match",
+                            ["get", "worldview"],
+                            ["all", "US"],
+                            true,
+                            false
+                        ]
+                    ],
+                    false
+                ],
+                ["==", ["geometry-type"], "Point"],
+                ["<=", ["get", "filterrank"], 2]
+            ],
+            "layout": {
+                "text-size": [
+                    "step",
+                    ["zoom"],
+                    ["step", ["get", "sizerank"], 18, 5, 12],
+                    17,
+                    ["step", ["get", "sizerank"], 18, 13, 12]
+                ],
+                "icon-image": "",
+                "text-font": ["DIN Pro Italic", "Arial Unicode MS Regular"],
+                "text-offset": ["literal", [0, 0]],
+                "text-field": ["coalesce", ["get", "name"], ["get", "name_en"]],
+                "text-pitch-alignment": "map",
+                "text-rotation-alignment": "map"
+            },
+            "paint": {
+                "icon-opacity": [
+                    "step",
+                    ["zoom"],
+                    ["step", ["get", "sizerank"], 0, 5, 1],
+                    17,
+                    ["step", ["get", "sizerank"], 0, 13, 1]
+                ],
+                "text-halo-color": "hsla(135, 100%, 0%, 0.55)",
+                "text-halo-width": 1,
+                "text-halo-blur": 2,
+                "text-translate": [5, 5],
+                "text-opacity": 0.49,
+                "text-color": "hsla(0, 0%, 0%, 0.47)"
+            }
+        },
+        {
+            "id": "natural-point-label text",
+            "type": "symbol",
+            "metadata": {"mapbox:group": "6aaf5ed60b6b78789b1b2cccd228db4a"},
+            "source": "composite",
+            "source-layer": "natural_label",
+            "minzoom": 4,
+            "filter": [
+                "all",
+                [
+                    "match",
+                    ["get", "class"],
+                    ["dock", "glacier", "landform", "water_feature", "wetland"],
+                    ["match", ["get", "worldview"], ["all", "US"], true, false],
+                    [
+                        "disputed_dock",
+                        "disputed_glacier",
+                        "disputed_landform",
+                        "disputed_water_feature",
+                        "disputed_wetland"
+                    ],
+                    [
+                        "all",
+                        ["==", ["get", "disputed"], "true"],
+                        [
+                            "match",
+                            ["get", "worldview"],
+                            ["all", "US"],
+                            true,
+                            false
+                        ]
+                    ],
+                    false
+                ],
+                ["==", ["geometry-type"], "Point"],
+                ["<=", ["get", "filterrank"], 2]
+            ],
+            "layout": {
+                "text-size": [
+                    "step",
+                    ["zoom"],
+                    ["step", ["get", "sizerank"], 18, 5, 12],
+                    17,
+                    ["step", ["get", "sizerank"], 18, 13, 12]
+                ],
+                "icon-image": "",
+                "text-font": ["DIN Pro Italic", "Arial Unicode MS Regular"],
+                "text-offset": ["literal", [0, 0]],
+                "text-field": ["coalesce", ["get", "name"], ["get", "name_en"]],
+                "text-pitch-alignment": "map",
+                "text-rotation-alignment": "map"
+            },
+            "paint": {
+                "icon-opacity": [
+                    "step",
+                    ["zoom"],
+                    ["step", ["get", "sizerank"], 0, 5, 1],
+                    17,
+                    ["step", ["get", "sizerank"], 0, 13, 1]
+                ],
+                "text-halo-color": "#acfcac",
+                "text-color": "hsl(135, 93%, 90%)",
+                "text-opacity": 0.8,
+                "text-halo-width": 0.5
+            }
+        },
+        {
+            "id": "water-line-label shadow",
+            "type": "symbol",
+            "metadata": {"mapbox:group": "6aaf5ed60b6b78789b1b2cccd228db4a"},
+            "source": "composite",
+            "source-layer": "natural_label",
+            "filter": [
+                "all",
+                [
+                    "match",
+                    ["get", "class"],
+                    ["bay", "ocean", "reservoir", "sea", "water"],
+                    ["match", ["get", "worldview"], ["all", "US"], true, false],
+                    [
+                        "disputed_bay",
+                        "disputed_ocean",
+                        "disputed_reservoir",
+                        "disputed_sea",
+                        "disputed_water"
+                    ],
+                    [
+                        "all",
+                        ["==", ["get", "disputed"], "true"],
+                        [
+                            "match",
+                            ["get", "worldview"],
+                            ["all", "US"],
+                            true,
+                            false
+                        ]
+                    ],
+                    false
+                ],
+                ["==", ["geometry-type"], "LineString"]
+            ],
+            "layout": {
+                "text-size": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    7,
+                    ["step", ["get", "sizerank"], 20, 6, 18, 12, 12],
+                    10,
+                    ["step", ["get", "sizerank"], 15, 9, 12],
+                    18,
+                    ["step", ["get", "sizerank"], 15, 9, 14]
+                ],
+                "text-ignore-placement": true,
+                "text-max-angle": 30,
+                "text-font": ["DIN Pro Italic", "Arial Unicode MS Regular"],
+                "symbol-placement": "line-center",
+                "text-offset": [0, 0],
+                "text-pitch-alignment": "map",
+                "text-field": ["coalesce", ["get", "name_en"], ["get", "name"]],
+                "text-letter-spacing": [
+                    "match",
+                    ["get", "class"],
+                    "ocean",
+                    0.25,
+                    ["sea", "bay"],
+                    0.15,
+                    0
+                ]
+            },
+            "paint": {
+                "text-color": [
+                    "match",
+                    ["get", "class"],
+                    ["bay", "ocean", "sea"],
+                    "hsl(205, 93%, 6%)",
+                    "#01121e"
+                ],
+                "text-translate": [10, 10],
+                "text-opacity": 0.47,
+                "text-halo-color": "hsla(0, 0%, 0%, 0.46)",
+                "text-halo-width": 1,
+                "text-halo-blur": 5
+            }
+        },
+        {
+            "id": "water-line-label text",
+            "type": "symbol",
+            "metadata": {"mapbox:group": "6aaf5ed60b6b78789b1b2cccd228db4a"},
+            "source": "composite",
+            "source-layer": "natural_label",
+            "filter": [
+                "all",
+                [
+                    "match",
+                    ["get", "class"],
+                    ["bay", "ocean", "reservoir", "sea", "water"],
+                    ["match", ["get", "worldview"], ["all", "US"], true, false],
+                    [
+                        "disputed_bay",
+                        "disputed_ocean",
+                        "disputed_reservoir",
+                        "disputed_sea",
+                        "disputed_water"
+                    ],
+                    [
+                        "all",
+                        ["==", ["get", "disputed"], "true"],
+                        [
+                            "match",
+                            ["get", "worldview"],
+                            ["all", "US"],
+                            true,
+                            false
+                        ]
+                    ],
+                    false
+                ],
+                ["==", ["geometry-type"], "LineString"]
+            ],
+            "layout": {
+                "text-size": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    7,
+                    ["step", ["get", "sizerank"], 20, 6, 18, 12, 12],
+                    10,
+                    ["step", ["get", "sizerank"], 15, 9, 12],
+                    18,
+                    ["step", ["get", "sizerank"], 15, 9, 14]
+                ],
+                "text-ignore-placement": true,
+                "text-max-angle": 30,
+                "text-font": ["DIN Pro Italic", "Arial Unicode MS Regular"],
+                "symbol-placement": "line-center",
+                "text-rotation-alignment": "map",
+                "text-pitch-alignment": "map",
+                "text-field": ["coalesce", ["get", "name_en"], ["get", "name"]],
+                "text-letter-spacing": [
+                    "match",
+                    ["get", "class"],
+                    "ocean",
+                    0.25,
+                    ["sea", "bay"],
+                    0.15,
+                    0
+                ]
+            },
+            "paint": {
+                "text-color": [
+                    "match",
+                    ["get", "class"],
+                    ["bay", "ocean", "sea"],
+                    "hsl(205, 72%, 90%)",
+                    "hsl(205, 44%, 90%)"
+                ]
+            }
+        },
+        {
+            "id": "water-point-label shadow",
+            "type": "symbol",
+            "metadata": {"mapbox:group": "6aaf5ed60b6b78789b1b2cccd228db4a"},
+            "source": "composite",
+            "source-layer": "natural_label",
+            "filter": [
+                "all",
+                [
+                    "match",
+                    ["get", "class"],
+                    ["bay", "ocean", "reservoir", "sea", "water"],
+                    ["match", ["get", "worldview"], ["all", "US"], true, false],
+                    [
+                        "disputed_bay",
+                        "disputed_ocean",
+                        "disputed_reservoir",
+                        "disputed_sea",
+                        "disputed_water"
+                    ],
+                    [
+                        "all",
+                        ["==", ["get", "disputed"], "true"],
+                        [
+                            "match",
+                            ["get", "worldview"],
+                            ["all", "US"],
+                            true,
+                            false
+                        ]
+                    ],
+                    false
+                ],
+                ["==", ["geometry-type"], "Point"]
+            ],
+            "layout": {
+                "text-line-height": 1.3,
+                "text-size": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    7,
+                    ["step", ["get", "sizerank"], 20, 6, 15, 12, 12],
+                    10,
+                    ["step", ["get", "sizerank"], 15, 9, 12]
+                ],
+                "text-allow-overlap": true,
+                "text-ignore-placement": true,
+                "text-font": ["DIN Pro Italic", "Arial Unicode MS Regular"],
+                "text-offset": [0, 0],
+                "text-rotation-alignment": "map",
+                "text-pitch-alignment": "map",
+                "text-field": ["coalesce", ["get", "name_en"], ["get", "name"]],
+                "text-letter-spacing": [
+                    "match",
+                    ["get", "class"],
+                    "ocean",
+                    0.25,
+                    ["bay", "sea"],
+                    0.15,
+                    0.01
+                ],
+                "text-max-width": [
+                    "match",
+                    ["get", "class"],
+                    "ocean",
+                    4,
+                    "sea",
+                    5,
+                    ["bay", "water"],
+                    7,
+                    10
+                ]
+            },
+            "paint": {
+                "text-color": "#01121e",
+                "text-translate": [10, 10],
+                "text-halo-color": "hsla(0, 0%, 0%, 0.46)",
+                "text-halo-width": 1,
+                "text-halo-blur": 5,
+                "text-opacity": 0.47
+            }
+        },
+        {
+            "id": "water-point-label text",
+            "type": "symbol",
+            "metadata": {"mapbox:group": "6aaf5ed60b6b78789b1b2cccd228db4a"},
+            "source": "composite",
+            "source-layer": "natural_label",
+            "filter": [
+                "all",
+                [
+                    "match",
+                    ["get", "class"],
+                    ["bay", "ocean", "reservoir", "sea", "water"],
+                    ["match", ["get", "worldview"], ["all", "US"], true, false],
+                    [
+                        "disputed_bay",
+                        "disputed_ocean",
+                        "disputed_reservoir",
+                        "disputed_sea",
+                        "disputed_water"
+                    ],
+                    [
+                        "all",
+                        ["==", ["get", "disputed"], "true"],
+                        [
+                            "match",
+                            ["get", "worldview"],
+                            ["all", "US"],
+                            true,
+                            false
+                        ]
+                    ],
+                    false
+                ],
+                ["==", ["geometry-type"], "Point"]
+            ],
+            "layout": {
+                "text-line-height": 1.3,
+                "text-size": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    7,
+                    ["step", ["get", "sizerank"], 20, 6, 15, 12, 12],
+                    10,
+                    ["step", ["get", "sizerank"], 15, 9, 12]
+                ],
+                "text-font": ["DIN Pro Italic", "Arial Unicode MS Regular"],
+                "text-rotation-alignment": "map",
+                "text-pitch-alignment": "map",
+                "text-field": ["coalesce", ["get", "name_en"], ["get", "name"]],
+                "text-letter-spacing": [
+                    "match",
+                    ["get", "class"],
+                    "ocean",
+                    0.25,
+                    ["bay", "sea"],
+                    0.15,
+                    0.01
+                ],
+                "text-max-width": [
+                    "match",
+                    ["get", "class"],
+                    "ocean",
+                    4,
+                    "sea",
+                    5,
+                    ["bay", "water"],
+                    7,
+                    10
+                ]
+            },
+            "paint": {
+                "text-color": [
+                    "match",
+                    ["get", "class"],
+                    ["bay", "ocean", "sea"],
+                    "hsl(205, 72%, 90%)",
+                    "hsl(205, 44%, 90%)"
+                ]
+            }
+        },
+        {
+            "id": "natural-point-label text copy 3",
+            "type": "symbol",
+            "metadata": {"mapbox:group": "581bf8ec7a9feccb4ce1b2d0119c7714"},
+            "source": "composite",
+            "source-layer": "place_label",
+            "minzoom": 6,
+            "maxzoom": 15,
+            "filter": [
+                "all",
+                ["match", ["get", "class"], ["settlement"], true, false],
+                [
+                    "match",
+                    ["get", "name"],
+                    [
+                        "Denpasar",
+                        "Labuan Bajo",
+                        "Palu",
+                        "Ampana",
+                        "Manado",
+                        "Sorong",
+                        "Coron",
+                        "El Nido",
+                        "Panglao"
+                    ],
+                    true,
+                    false
+                ]
+            ],
+            "layout": {
+                "text-field": ["to-string", ["get", "name"]],
+                "text-font": ["Open Sans Italic", "Arial Unicode MS Regular"],
+                "text-size": 14,
+                "text-rotation-alignment": "map",
+                "text-allow-overlap": true,
+                "text-ignore-placement": true,
+                "text-pitch-alignment": "map"
+            },
+            "paint": {
+                "text-color": "hsla(90, 53%, 6%, 0.54)",
+                "text-opacity": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    8.5,
+                    0.5,
+                    11,
+                    0
+                ],
+                "text-halo-color": "hsla(111, 67%, 5%, 0.54)",
+                "text-halo-width": 1,
+                "text-halo-blur": 2,
+                "text-translate": [4, 4]
+            }
+        },
+        {
+            "id": "natural-point-label text copy 4",
+            "type": "symbol",
+            "metadata": {"mapbox:group": "581bf8ec7a9feccb4ce1b2d0119c7714"},
+            "source": "composite",
+            "source-layer": "place_label",
+            "minzoom": 6,
+            "maxzoom": 15,
+            "filter": [
+                "all",
+                ["match", ["get", "class"], ["settlement"], true, false],
+                [
+                    "match",
+                    ["get", "name"],
+                    [
+                        "Denpasar",
+                        "Labuan Bajo",
+                        "Palu",
+                        "Ampana",
+                        "Manado",
+                        "Sorong",
+                        "Coron",
+                        "El Nido",
+                        "Panglao"
+                    ],
+                    true,
+                    false
+                ]
+            ],
+            "layout": {
+                "text-field": ["to-string", ["get", "name"]],
+                "text-font": ["Open Sans Italic", "Arial Unicode MS Regular"],
+                "text-size": 14,
+                "text-pitch-alignment": "map",
+                "text-rotation-alignment": "map"
+            },
+            "paint": {
+                "text-color": "hsl(183, 95%, 96%)",
+                "text-opacity": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    8.5,
+                    0.82,
+                    11,
+                    0
+                ],
+                "text-halo-color": "hsla(111, 95%, 82%, 0.65)",
+                "text-halo-width": 0.5
+            }
+        }
+    ],
+    "created": "2022-01-16T14:11:06.352Z",
+    "modified": "2022-01-19T14:46:59.896Z",
+    "id": "ckyhc6j18ht2o15pc7zdt0pzv",
+    "owner": "wiesehahn",
+    "visibility": "private",
+    "protected": false,
+    "draft": false
+}
