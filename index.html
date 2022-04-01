@@ -37,7 +37,7 @@
 
       .overlay button {
         font: 600 12px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
-        background-color: rgba(255, 255, 255, 0.238);
+        background-color: rgb(255, 255, 255);
         color: #333333;
         display: inline-block;
         margin: 0;
@@ -50,7 +50,7 @@
       }
 
       .overlay button:hover {
-        background-color: #f2f2f231;
+        background-color: #f2f2f2;
       }
     </style>
 
@@ -190,7 +190,7 @@
           closeButton: false,
           closeOnClick: false,
         });
-        map.on("mouseenter", "divecenters-layer", function (e) {
+        map.on("mouseenter", "divecenters-8z4elo copy 2", function (e) {
           // Change the cursor style as a UI indicator.
           map.getCanvas().style.cursor = "pointer";
           var coordinates = e.features[0].geometry.coordinates.slice();
@@ -205,7 +205,7 @@
           // based on the feature found.
           popup.setLngLat(coordinates).setHTML(description).addTo(map);
         });
-        map.on("mouseleave", "divecenters-layer", function () {
+        map.on("mouseleave", "divecenters-8z4elo copy 2", function () {
           map.getCanvas().style.cursor = "";
           popup.remove();
         });
