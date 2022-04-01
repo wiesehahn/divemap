@@ -37,18 +37,20 @@
 
       .overlay button {
         font: 600 12px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
-        background-color: #3386c0;
-        color: #fff;
+        background-color: rgba(255, 255, 255, 0.238);
+        color: #333333;
         display: inline-block;
         margin: 0;
-        padding: 10px 20px;
-        border: none;
+        padding: 5px 10px;
+        border: #e6e6e6;
+        border-style: solid;
+        border-width: 3px;
         cursor: pointer;
         border-radius: 3px;
       }
 
       .overlay button:hover {
-        background-color: #4ea0da;
+        background-color: #f2f2f231;
       }
     </style>
 
@@ -184,7 +186,7 @@
         });
 
         // Create a popup, but don't add it to the map yet.
-        var popup = new maplibregl.Popup({
+        var popup = new mapboxgl.Popup({
           closeButton: false,
           closeOnClick: false,
         });
