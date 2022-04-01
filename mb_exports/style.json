@@ -425,6 +425,7 @@
             "metadata": {"mapbox:group": "070a0a14a66ca232fd7eb822e4434ba9"},
             "source": "composite",
             "source-layer": "divecenters-8z4elo",
+            "maxzoom": 9,
             "paint": {
                 "circle-color": "hsla(0, 0%, 0%, 0)",
                 "circle-radius": [
