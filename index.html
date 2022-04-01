@@ -1,97 +1,233 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Display a map on a webpage</title>
-    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
-    <script src="https://unpkg.com/maplibre-gl@1.15.2/dist/maplibre-gl.js"></script>
-    <link href="https://unpkg.com/maplibre-gl@1.15.2/dist/maplibre-gl.css" rel="stylesheet" />
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
     <style>
-    body { margin: 0; padding: 0; }
-    #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
+    <style>
+      .overlay {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+
+      .overlay button {
+        font: 600 12px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
+        background-color: #3386c0;
+        color: #fff;
+        display: inline-block;
+        margin: 0;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 3px;
+      }
+
+      .overlay button:hover {
+        background-color: #4ea0da;
+      }
+    </style>
+
     <div id="map"></div>
+
+    <div class="overlay">
+      <button id="overview">Overview</button>
+    </div>
+
     <script>
-        var map = new maplibregl.Map({
-            container: 'map', // container ID
-            style: 'https://api.maptiler.com/maps/streets/style.json?key=get_your_own_OpIi9ZULNHzrESv6T2vL', // style URL
-            center: [120, 5], // starting position [lng, lat]
-            zoom: 4,
-            minZoom: 1, //0 lowest
-            maxZoom: 16 //22 highest
-        });
+      mapboxgl.accessToken =
+        "pk.eyJ1Ijoid2llc2VoYWhuIiwiYSI6ImNreWxvNHN1ejM3eW4ydm4wZmk5NTVpNnoifQ.1LUJzdqzbd0hmjW89Zvt2w";
+      const map = new mapboxgl.Map({
+        container: "map", // container ID
+        style: "mb_exports/style.json", //"mapbox://styles/wiesehahn/ckyhc6j18ht2o15pc7zdt0pzv", // style URL
+        center: [120, 5], // starting position [lng, lat]
+        zoom: 4,
+        minZoom: 1,
+        maxZoom: 16,
+      });
 
-        map.on('load', () => {
+      map.on("load", () => {
+        // Load an image from an external URL.
+        map.loadImage(
+          "https://raw.githubusercontent.com/wiesehahn/divemap/0f508b538d7ff214161d7dc3ce00879a2580587d/assets/scuba-symbol.png",
+          (error, image) => {
+            if (error) throw error;
+            // Add the image to the map style.
+            map.addImage("dive-icon", image);
 
-            // Load an image from an external URL.
-            map.loadImage(
-            'https://raw.githubusercontent.com/wiesehahn/divemap/0f508b538d7ff214161d7dc3ce00879a2580587d/assets/scuba-symbol.png',
-            (error, image) => {
-                if (error) throw error;
-                // Add the image to the map style.
-                map.addImage('dive-icon', image);
-
-            map.addSource('divecenters', {
-                type: 'geojson',
-                // Use a URL for the value for the `data` property.
-                data: 'https://raw.githubusercontent.com/wiesehahn/divemap/main/divecenters.geojson'
+            map.addSource("divespots", {
+              type: "geojson",
+              // Use a URL for the value for the `data` property.
+              data: "https://raw.githubusercontent.com/wiesehahn/divemap/main/divespots.geojson",
+            });
+            map.addSource("mapbox-dem", {
+              type: "raster-dem",
+              url: "mapbox://mapbox.mapbox-terrain-dem-v1",
+            });
+            map.setTerrain({
+              source: "mapbox-dem",
+              exaggeration: ["interpolate", ["linear"], ["zoom"], 0, 5, 10, 1],
             });
 
             map.addLayer({
-                'id': 'divecenters-layer',
-                'type': 'symbol',
-                'source': 'divecenters',
-                'maxzoom': 10,
-                'layout': {
-                    'icon-image': 'dive-icon', // reference the image
-                    'icon-size': 0.2
-                }
+              id: "divespots-layer",
+              type: "symbol",
+              source: "divespots",
+              minzoom: 8,
+              layout: {
+                "icon-image": [
+                  "match",
+                  ["get", "equipment"],
+                  "scuba",
+                  "dive-icon",
+                  "", // none for any other type
+                ],
+                "icon-size": [
+                  "interpolate",
+                  ["linear"],
+                  ["zoom"],
+                  // zoom is 8 (or less) -> size will be 0.05
+                  8,
+                  0.05,
+                  // zoom is 15 (or greater) -> size will be 0.2
+                  15,
+                  0.2,
+                ],
+                "icon-allow-overlap": true,
+              },
             });
-        })
 
+            map.addLayer({
+              id: "sky",
+              type: "sky",
+              paint: {
+                // set up the sky layer to use a color gradient
+                "sky-type": "gradient",
+                // the sky will be lightest in the center and get darker moving radially outward
+                // this simulates the look of the sun just below the horizon
+                "sky-gradient": [
+                  "interpolate",
+                  ["linear"],
+                  ["sky-radial-progress"],
+                  0.8,
+                  "rgba(135, 206, 235, 1.0)",
+                  1,
+                  "rgba(0,0,0,0.1)",
+                ],
+                "sky-gradient-center": [0, 0],
+                "sky-gradient-radius": 90,
+                "sky-opacity": [
+                  "interpolate",
+                  ["exponential", 0.1],
+                  ["zoom"],
+                  5,
+                  0,
+                  22,
+                  1,
+                ],
+              },
+            });
+          }
+        );
+
+        // Center the map on the coordinates of any clicked circle from the 'circle' layer.
+        map.on("click", "divecenters-8z4elo copy 2", (e) => {
+          map.flyTo({
+            center: e.features[0].geometry.coordinates,
+            zoom: 10,
+            bearing: 30,
+            pitch: 30,
+
+            // These options control the flight curve, making it move
+            // slowly and zoom out almost completely before starting
+            // to pan.
+            speed: 1, // make the flying slow
+            curve: 0.5, // change the speed at which it zooms out
+
+            // this animation is considered essential with respect to prefers-reduced-motion
+            essential: true,
+          });
+        });
+
+        // Change the cursor to a pointer when the it enters a feature in the 'circle' layer.
+        map.on("mouseenter", "divecenters-8z4elo copy 2", () => {
+          map.getCanvas().style.cursor = "pointer";
+        });
+
+        // Change it back to a pointer when it leaves.
+        map.on("mouseleave", "divecenters-8z4elo copy 2", () => {
+          map.getCanvas().style.cursor = "";
+        });
 
         // Create a popup, but don't add it to the map yet.
         var popup = new maplibregl.Popup({
-            closeButton: false,
-            closeOnClick: false
+          closeButton: false,
+          closeOnClick: false,
         });
- 
-        map.on('mouseenter', 'divecenters-layer', function (e) {
-            // Change the cursor style as a UI indicator.
-            map.getCanvas().style.cursor = 'pointer';
- 
-            var coordinates = e.features[0].geometry.coordinates.slice();
-            var description = e.features[0].properties.island;
- 
-            // Ensure that if the map is zoomed out such that multiple
-            // copies of the feature are visible, the popup appears
-            // over the copy being pointed to.
-            while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-                coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-            }
- 
-            // Populate the popup and set its coordinates
-            // based on the feature found.
-            popup.setLngLat(coordinates).setHTML(description).addTo(map);
+        map.on("mouseenter", "divecenters-layer", function (e) {
+          // Change the cursor style as a UI indicator.
+          map.getCanvas().style.cursor = "pointer";
+          var coordinates = e.features[0].geometry.coordinates.slice();
+          var description = e.features[0].properties.island;
+          // Ensure that if the map is zoomed out such that multiple
+          // copies of the feature are visible, the popup appears
+          // over the copy being pointed to.
+          while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+          }
+          // Populate the popup and set its coordinates
+          // based on the feature found.
+          popup.setLngLat(coordinates).setHTML(description).addTo(map);
         });
- 
-        map.on('mouseleave', 'divecenters-layer', function () {
-            map.getCanvas().style.cursor = '';
-            popup.remove();
+        map.on("mouseleave", "divecenters-layer", function () {
+          map.getCanvas().style.cursor = "";
+          popup.remove();
         });
+      });
 
-    });
+      document.getElementById("overview").addEventListener("click", () => {
+        map.flyTo({
+          center: [123.83697133205874, 1.3468258144037293],
+          zoom: 4.383254165076805,
+          bearing: 0,
+          pitch: 0,
 
+          // These options control the flight curve, making it move
+          // slowly and zoom out almost completely before starting
+          // to pan.
+          speed: 1, // make the flying slow
+          curve: 0.5, // change the speed at which it zooms out
 
-    
-    map.addControl(new maplibregl.FullscreenControl());
-    
+          // this animation is considered essential with respect to prefers-reduced-motion
+          essential: true,
+        });
+      });
+
+      map.addControl(new mapboxgl.FullscreenControl());
     </script>
-    
-</body>
-
+  </body>
 </html>
