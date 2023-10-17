@@ -2,9 +2,23 @@
 
 **Discovering Mapbox Styling Possibilities**
 
+Screenshots from low Zoom to high Zoom:
+
+![](img/z00.JPG)
+![](img/z01.JPG)
+![](img/z02.JPG)
+![](img/z03.JPG)
+![](img/z04.JPG)
+![](img/z05.JPG)
+![](img/z06.JPG)
+![](img/z07.JPG)
+![](img/z08.JPG)
+![](img/z09.JPG)
+![](img/z10.JPG)
+
 ## About
 The initial thought about the project was to get comfortable with Mapbox styling possibilities. 
-I used my diving and snorkeling trips as input data and to set the overall theme. 
+I used my diving and snorkeling trips as input data and as the base idea for the overall theme. 
 Local geojson markers are rendered on a webmap using Mapbox GL JS.
 
 ## Theme
